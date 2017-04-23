@@ -1,6 +1,6 @@
 .app {
   text-align: center;
-  margin-top: 20%;
+  margin-top: 15%;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -8,12 +8,32 @@
   font-size: 50px;
 }
 
+.app-form {
+  width: 40%;
+  margin: 10px auto;
+}
+
 .clock-days, .clock-hrs, .clock-days, .clock-min, .clock-secs {
   display: inline;
   margin: 10px;
+  font-size: 30px;
+}
+
+.clock-num {
+  color: red;
 }
 
 .deadline-input {
-	font-size: 25px;
-	margin: 5px;
+  font-size: 25px;
+  margin-top: 5px;
+  height: 40px;
+}
+
+.btn {
+  height: 40px;
+  margin-top: 10px;
+}
+
+input {
+  text-align: center;
 }
