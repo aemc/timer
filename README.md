@@ -5,15 +5,17 @@ Personal Project. Countdown app using React.js
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
-You will need to install React.js and Node.js
+You will need to install React.js and Node.js.
 
 ### Installing
-Clone or download the source code and run ```$ npm start``` or ```$ yarn start``` within the root directory.
+Clone or download the source code on your computer.
 
 ### Running
-Either run in the cloud9 IDE or in your own development environment. The latter will need the port settings changed within the app.js file.
+Run ```$ npm start``` or ```$ yarn start``` within the root directory.
+
 
 ### To-Do List
+- [x] Fix empty input
 - [ ] Fix non-date inputs
 - [ ] Polish front-end
 - [ ] Deploy to Amazon Web Services/Heroku
