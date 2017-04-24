@@ -16,8 +16,9 @@ Run ```$ npm start``` or ```$ yarn start``` within the root directory.
 
 ### To-Do List
 - [x] Fix empty input
-- [ ] Fix non-date inputs
-- [ ] Polish front-end
+- [x] Fix non-date inputs
+- [x] Fix responsive issues
+- [x] Polish front-end
 - [ ] Deploy to Amazon Web Services/Heroku
 
 ### Built With

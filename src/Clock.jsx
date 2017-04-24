@@ -13,9 +13,7 @@ class Clock extends Component {
   }
 
   componentWillMount() {
-    console.log(this.props.deadline)
     this.getTimeUntil(this.props.deadline);
-
   }
 
   getTimeUntil(deadline) {
@@ -24,6 +22,7 @@ class Clock extends Component {
     const minutes = Math.floor((time / 1000 / 60) % 60);
     const hours = Math.floor(time / (1000 * 60 * 60) % 24);
     const days = Math.floor(time / (1000 * 60 * 60 * 24));
+
     this.setState({days, hours, minutes, seconds});
   }
 
@@ -38,10 +37,10 @@ class Clock extends Component {
   render() {
     return (
       <div>
-          <div className="clock-days"><span className="clock-num">{this.leading0(this.state.days)}</span> days</div>
-          <div className="clock-hrs"><span className="clock-num">{this.leading0(this.state.hours)}</span> hours</div>
-          <div className="clock-min"><span className="clock-num">{this.leading0(this.state.minutes)}</span> minutes</div>
-          <div className="clock-secs"><span className="clock-num">{this.leading0(this.state.seconds)}</span> seconds</div>
+        <div className="clock-days"><span className="clock-num">{this.leading0(this.state.days)}</span> days</div>
+        <div className="clock-hrs"><span className="clock-num">{this.leading0(this.state.hours)}</span> hours</div>
+        <div className="clock-min"><span className="clock-num">{this.leading0(this.state.minutes)}</span> minutes</div>
+        <div className="clock-secs"><span className="clock-num">{this.leading0(this.state.seconds)}</span> seconds</div>
       </div>
     )
   }

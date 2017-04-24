@@ -24,11 +24,11 @@ class App extends Component {
     return (
       <div className="app">
         <div className="app-title">Countdown To {this.state.deadline}</div>
-        <Clock deadline={this.state.deadline}/>
+        <Clock deadline={this.state.deadline} />
         <form className="app-form">
           <FormGroup>
             <FormControl className="deadline-input"
-              placeholder='Enter new date'
+              placeholder='Enter a new date'
               onChange={event => this.setState({newDeadline: event.target.value})} 
             /> 
             <Button bsStyle="primary" block onClick={() => this.updateDeadline()}>Submit</Button>
