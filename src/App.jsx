@@ -13,11 +13,7 @@ class App extends Component {
   }
 
   updateDeadline() {
-    if (isNaN(Date.parse(this.state.newDeadline)) || this.state.newDeadline === '') {
-      this.setState({deadline: this.state.deadline});
-    } else {
-      this.setState({deadline: this.state.newDeadline})
-    }
+    this.setState({deadline: this.state.newDeadline})
   }
 
   render() {
@@ -31,7 +27,13 @@ class App extends Component {
               placeholder='Enter a new date'
               onChange={event => this.setState({newDeadline: event.target.value})} 
             /> 
-            <Button bsStyle="primary" block onClick={() => this.updateDeadline()}>Submit</Button>
+            <Button bsStyle="primary" block onClick={
+              () => {
+                if (!isNaN(Date.parse(this.state.newDeadline)) && this.state.newDeadline !== '') {
+                    this.updateDeadline();
+                }
+              }
+            }>Submit</Button>
           </FormGroup>
         </form>
       </div>
