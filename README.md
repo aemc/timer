@@ -1,5 +1,5 @@
-# Countdown App
-Personal Project. Countdown app using React.js
+# Countdown Timer
+Personal Project. Countdown timer using React.js
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
