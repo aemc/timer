@@ -5,15 +5,11 @@
   "dependencies": {
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
-<<<<<<< HEAD
-    "react-bootstrap": "^0.31.1",
-=======
     "react-bootstrap": "^0.31.2",
->>>>>>> develop
     "react-dom": "^15.6.1"
   },
   "devDependencies": {
-    "react-scripts": "1.0.10"
+    "react-scripts": "1.0.11"
   },
   "scripts": {
     "start": "react-scripts start",
